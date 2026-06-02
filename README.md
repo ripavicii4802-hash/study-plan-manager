@@ -1,17 +1,38 @@
-# API 키 파일은 절대 GitHub에 올리지 않기
-.env
-src/.env
+# AI 기반 공부 계획 평가 시스템
 
-# Python 임시 파일
-__pycache__/
-*.pyc
-*.pyo
+## 1. 프로젝트 소개
 
-# PyInstaller 결과물
-build/
-dist/
-*.spec
+본 프로젝트는 학생들이 공부 계획을 효율적으로 관리할 수 있도록 돕는 프로그램입니다.  
+사용자는 공부할 항목, 과목, 공부 시간, 우선순위, 마감일, 완료 여부를 입력할 수 있습니다.  
+입력된 데이터를 바탕으로 공부 진행률과 과목별 공부 시간을 확인할 수 있으며, OpenAI API를 활용하여 AI 분석 결과를 받을 수 있습니다.
 
-# 운영체제 임시 파일
-.DS_Store
-Thumbs.db
+## 2. 주요 기능
+
+- 할 일 추가
+- 과목 입력
+- 공부 시간 입력
+- 우선순위 설정
+- 마감일 입력
+- 완료 여부 표시
+- 공부 진행률 분석
+- 과목별 공부 시간 그래프 시각화
+- 데이터 저장 및 불러오기
+- AI 공부 계획 분석
+
+## 3. 사용 기술
+
+- Python
+- Tkinter
+- JSON
+- Matplotlib
+- OpenAI API
+- PyInstaller
+
+## 4. 실행 방법
+
+### Python으로 실행
+
+```bash
+cd src
+pip install -r requirements.txt
+python main.py
